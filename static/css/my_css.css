@@ -20,45 +20,60 @@ body {
     background: rgb(99, 35, 35);
 }
 
-.cont{
-    margin: 0;
-    padding: 0;
+section {
+    margin: 2.5%;
+}
+
+.container{
+    display: inline;
 }
 
 .row {
-    background-color: aliceblue;
-    height: 85vh;
-    width: 100%;
-    position: relative;
+    padding-bottom: 30px;
+}
+
+#main {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
+    align-items: center;
     margin: 0;
     padding: 0;
 }
 
-.row>img{
-    height: 85vh;
-    width: 100%;
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    z-index: 1;
+#anim {
+    animation: myAnim 5s ease 0s 1 normal forwards;
 }
 
-.centered {
-    position: absolute;
-    width: 100%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
+#main>.row>h1 {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    font-size: 6.5em;
+    font-family: 'Angst';
+    line-height: 15%;
+    color: rgb(148, 85, 85);
+}
+
+#main>.row>h2 {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Angst';
+    line-height: normal;
+    color: rgb(184, 139, 121);
+}
 
 @font-face {
     font-family: 'Angst';
@@ -68,54 +83,97 @@ body {
 }
 
 
-
-/* .half-1 {
-    display: block;
-    color: rgb(222, 140, 39);
-    z-index: 2;
-    width: 50%;
+#sale div div p {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Angst';
+    line-height: normal;
 }
 
-.half-2 {
-    display: block;
-    width: 50%;
-} */
-
-
-/* .row-text>h1 {
-    color: wheat;
-    z-index: 2;
-    width: 50%;
-    position: absolute;
-    top: 45%;
-    right: 55%;
-    font-family: "Angst";
-    font-size: 80px;
-    margin-bottom:  5px;
-
+#bottom {
+        width: 100%;
+    margin: 10px;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Angst';
+    line-height: normal;
 }
-.row-text>h2 {
-    color: rgb(206, 123, 103);
-    z-index: 2;
-    width: 50%;
-    position: absolute;
-    top: 55%;
-    right: 54%;
-    font-family: "Angst";
-    font-size: 60px;
-    margin-top: 5px;
-} */
 
-@media (max-width:992px) {
-    .row-text>h1{
-        font-size: x-large;
-        top: 48%;
-        right:73%;
+
+
+
+@media (max-width: 1300px) {
+    #main>.row>h1 {
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+        font-size: 4em;
+        font-family: 'Angst';
     }
-    .row-text>h2{
-        font-size: x-large;
-        top: 52%;
-        right: 66%;
+    
+    #main>.row>h2 {
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+        font-size: 2em;
+        font-family: 'Angst';
     }
 }
 
+@media (max-width: 800px) {
+    #main>.row>h1 {
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+        font-size: 3em;
+        font-family: 'Angst';
+        line-height: 10%;
+    }
+    
+    #main>.row>h2 {
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+        font-size: 1em;
+        font-family: 'Angst';
+    }
+}
+
+@media (max-width: 600px) {
+    #main>.row>h1 {
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+        font-size: 2em;
+        font-family: 'Angst';
+        line-height: 0.5px;
+    }
+    
+    #main>.row>h2 {
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+        font-size: 1em;
+        font-family: 'Angst';
+    }
+}
+
+@media (max-width: 450px) {
+    #main>.row>h1 {
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+        font-size: 1em;
+        font-family: 'Angst';
+    }
+    
+    #main>.row>h2 {
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+        font-size: 0.5em;
+        font-family: 'Angst';
+    }
+}
