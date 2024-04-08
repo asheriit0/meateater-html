@@ -1,8 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Angst";
 }
 
+html {
+    overflow-x: hidden;
+    }
+
+/* navbar start */
 
 .navbar.navbar-expand-lg.bg-body-tertiary {
     background-color: rgb(0, 0, 0) !important;
@@ -16,12 +22,22 @@
     color: blanchedalmond;
 }
 
+/* navbar end */
+
+/* body start */
 body {
     background: rgb(99, 35, 35);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
+/* first row start */
+
 section {
-    margin: 2.5%;
+    margin: auto;
+    margin-top: 2.5%;
+    max-width: 1300px;
 }
 
 .container{
@@ -82,29 +98,44 @@ section {
     local("Angst-BoldSerif.otf")
 }
 
+/* first row end */
 
-#sale div div p {
-    width: 100%;
-    margin: 10px;
-    text-align: center;
-    font-size: 3em;
-    font-family: 'Angst';
-    line-height: normal;
+/* secpnd row start */
+
+p {
+    margin: 0;
 }
 
-#bottom {
-        width: 100%;
-    margin: 10px;
-    text-align: center;
-    font-size: 3em;
-    font-family: 'Angst';
-    line-height: normal;
+#second-row div div p {
+    font-size: 200%;
+}
+#second-row div div #h1 {
+    font-size: 250%;
+}
+
+/* second row end */
+
+#bottom div div {
+    margin-bottom: 30px;
 }
 
 
+/* fotter start */
+
+footer {
+    background-color: rgb(0, 0, 0);
+    margin-top: auto;
+}
+
+.footer-text {
+    color: blanchedalmond;
+    margin: auto auto;
+    margin-top: 1rem;
+}
 
 
 @media (max-width: 1300px) {
+
     #main>.row>h1 {
         width: 100%;
         margin: 10px;
@@ -120,7 +151,20 @@ section {
         font-size: 2em;
         font-family: 'Angst';
     }
+
+    #second-row div div p {
+        font-size:150%;
+    }
+    #second-row div div #h1 {
+        font-size: 200%;
+    }
+
+    section {
+        margin: 2.5%;
+    }
+    
 }
+
 
 @media (max-width: 800px) {
     #main>.row>h1 {
@@ -139,16 +183,27 @@ section {
         font-size: 1em;
         font-family: 'Angst';
     }
+
+    #second-row div div p {
+        font-size: 80%;
+    }
+    #second-row div div #h1 {
+        font-size: 120%;
+    }
+
+
+
+
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     #main>.row>h1 {
         width: 100%;
         margin: 10px;
         text-align: center;
         font-size: 2em;
         font-family: 'Angst';
-        line-height: 0.5px;
+        line-height: 1px;
     }
     
     #main>.row>h2 {
@@ -158,22 +213,41 @@ section {
         font-size: 1em;
         font-family: 'Angst';
     }
+
+    #second-row div div p {
+        font-size: 70%;
+    }
+    #second-row div div #h1 {
+        font-size: 120%;
+    }
+
 }
+
+
 
 @media (max-width: 450px) {
     #main>.row>h1 {
         width: 100%;
-        margin: 10px;
+        margin: 3px;
         text-align: center;
         font-size: 1em;
         font-family: 'Angst';
+        line-height: 1px;
     }
     
     #main>.row>h2 {
         width: 100%;
-        margin: 10px;
+        margin: 3px;
         text-align: center;
         font-size: 0.5em;
         font-family: 'Angst';
     }
+
+    #second-row div div p {
+        font-size: 50%;
+    }
+    #second-row div div #h1 {
+        font-size: 100%;
+    }
 }
+
