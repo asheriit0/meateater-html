@@ -19,7 +19,7 @@ html {
 }
 
 .navbar-nav .nav-link {
-    color: blanchedalmond;
+    color: rgb(245, 224, 194);
 }
 
 /* navbar end */
@@ -35,9 +35,14 @@ body {
 /* first row start */
 
 section {
-    margin: auto;
+    margin: 0 auto;
     margin-top: 2.5%;
     max-width: 1300px;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .container{
@@ -100,7 +105,7 @@ section {
 
 /* first row end */
 
-/* secpnd row start */
+/* second row start */
 
 p {
     margin: 0;
@@ -113,10 +118,47 @@ p {
     font-size: 250%;
 }
 
+.sale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* second row end */
 
 #bottom div div {
     margin-bottom: 30px;
+}
+
+#sale {
+    animation: myAni 2s ease 0s infinite normal forwards;
+}
+
+@keyframes myAni {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
 }
 
 
@@ -128,10 +170,20 @@ footer {
 }
 
 .footer-text {
-    color: blanchedalmond;
+    color: rgb(245, 224, 194);
     margin: auto auto;
-    margin-top: 1rem;
 }
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer {
+    padding-top: 30px;
+}
+
+
 
 
 @media (max-width: 1300px) {
@@ -159,11 +211,27 @@ footer {
         font-size: 200%;
     }
 
+    #second-row div div #h2 {
+        font-size: 150%;
+    }
+
     section {
         margin: 2.5%;
     }
     
 }
+
+@media (max-width:990px) {
+    .footer-text {
+        margin-top: 1rem;
+    }
+
+    .media-links {
+        margin-top: 1rem;
+    }
+}
+
+
 
 
 @media (max-width: 800px) {
@@ -185,10 +253,14 @@ footer {
     }
 
     #second-row div div p {
-        font-size: 80%;
+        font-size: 100%;
     }
     #second-row div div #h1 {
         font-size: 120%;
+    }
+
+    #second-row div div #h2 {
+        font-size: 100%;
     }
 
 
@@ -215,10 +287,13 @@ footer {
     }
 
     #second-row div div p {
-        font-size: 70%;
+        font-size: 80%;
     }
     #second-row div div #h1 {
-        font-size: 120%;
+        font-size: 100%;
+    }
+    #second-row div div #h2 {
+        font-size: 80%;
     }
 
 }
@@ -245,9 +320,19 @@ footer {
 
     #second-row div div p {
         font-size: 50%;
+        margin-bottom: 0;
     }
     #second-row div div #h1 {
         font-size: 100%;
     }
+
+    #second-row div div #h2 {
+        font-size: 50%;
+    }
+
+    #second-row div div {
+        margin-bottom: 0;
+    }
+
 }
 
