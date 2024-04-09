@@ -18,13 +18,15 @@
 
 </head>
 
+
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary" style="width: 100%;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="static/images/Mask group.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="width: 2em; ">
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="width: 2em;">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -36,7 +38,30 @@
                             <a class="nav-link" href="pricing.html">Каталог</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pricing.html">Корзина</a>
+                            <a class="nav-link" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal" href="pricing.html">Корзина</a>
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel" style="color: #fff;">Корзина
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Закрыть</button>
+                                            <button type="button" class="btn btn-primary">Оформить заказ</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
