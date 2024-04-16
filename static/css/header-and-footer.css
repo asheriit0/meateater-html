@@ -1,9 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Comfortaa&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Yeseva&One&display=swap);
 
 * {
     margin: 0;
     padding: 0;
-    font-family: Comfortaa, serif;
+    font-family: Yeseva One, serif;
 }
 
 
@@ -30,6 +30,22 @@
 }
 
 
+.nav-item.dropdown a{color: rgb(245, 224, 194) !important;}
+
+.dropdown-item:hover {
+    background-color: grey;
+    }
+    
+.dropdown-item.active, .dropdown-item:active {
+    background-color: rgb(99, 35, 35);
+    }
+
+.modal-footer button {color: rgb(245, 224, 194);}
+
+
+
+
+
 /* navbar end */
 
 /* body start */
@@ -40,11 +56,18 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    
 }
+
+.row {
+    padding-bottom: 30px;
+}
+
 
 footer {
     background-color: rgb(0, 0, 0);
     margin-top: auto;
+    
 }
 
 .footer-text {
@@ -57,9 +80,15 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
 #footer {
     padding-top: 30px;
 }
+
+p {
+    margin: 0;
+}
+
 
 @media (max-width:990px) {
     .footer-text {
@@ -71,7 +100,7 @@ footer {
     }
 }
 
-@media (max-with:1300px) {
+@media (max-width:1300px) {
 
     section {
         margin: 2.5%;

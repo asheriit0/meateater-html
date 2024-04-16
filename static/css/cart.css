@@ -1,5 +1,3 @@
-
-
 .card {
     background: black !important;
 }
@@ -25,14 +23,12 @@ section {
     padding-bottom: 30px;
 }
 
-p {
-    margin: 0;
-}
 
 
 
-.btn {
-    margin-top: 10px;
+.col.p-0 p {
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 @media (max-width:1300px) {
